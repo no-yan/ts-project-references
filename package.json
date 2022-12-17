@@ -1,4 +1,7 @@
 {
   "name": "ts-project-references",
-  "packageManager": "yarn@3.3.0"
+  "packageManager": "yarn@3.3.0",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
 }
