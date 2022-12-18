@@ -3,7 +3,12 @@
   "packageManager": "yarn@3.3.0",
   "devDependencies": {
     "rome": "^11.0.0",
+    "server": "workspace:^",
     "typescript": "^4.9.4"
+  },
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node index.js"
   },
   "dependencies": {
     "react": "^18.2.0",
