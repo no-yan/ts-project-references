@@ -4,5 +4,10 @@
     "**/.pnp.*": true
   },
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+      "editor.codeActionsOnSave":{
+        "source.organizeImports.rome": true
+    },
+		"editor.defaultFormatter": "rome.rome",
+     "editor.formatOnSave": true,   // 保存時にフォーマット
 }
