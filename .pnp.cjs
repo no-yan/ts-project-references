@@ -38,10 +38,64 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["prettier", "npm:2.8.1"],\
+            ["rome", "npm:11.0.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=d73830"]\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@rometools/cli-darwin-arm64", [\
+        ["npm:11.0.0", {\
+          "packageLocation": "./.yarn/unplugged/@rometools-cli-darwin-arm64-npm-11.0.0-f61083628b/node_modules/@rometools/cli-darwin-arm64/",\
+          "packageDependencies": [\
+            ["@rometools/cli-darwin-arm64", "npm:11.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@rometools/cli-darwin-x64", [\
+        ["npm:11.0.0", {\
+          "packageLocation": "./.yarn/unplugged/@rometools-cli-darwin-x64-npm-11.0.0-2378d01d34/node_modules/@rometools/cli-darwin-x64/",\
+          "packageDependencies": [\
+            ["@rometools/cli-darwin-x64", "npm:11.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@rometools/cli-linux-arm64", [\
+        ["npm:11.0.0", {\
+          "packageLocation": "./.yarn/unplugged/@rometools-cli-linux-arm64-npm-11.0.0-9a8f4a563c/node_modules/@rometools/cli-linux-arm64/",\
+          "packageDependencies": [\
+            ["@rometools/cli-linux-arm64", "npm:11.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@rometools/cli-linux-x64", [\
+        ["npm:11.0.0", {\
+          "packageLocation": "./.yarn/unplugged/@rometools-cli-linux-x64-npm-11.0.0-8d6b510425/node_modules/@rometools/cli-linux-x64/",\
+          "packageDependencies": [\
+            ["@rometools/cli-linux-x64", "npm:11.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@rometools/cli-win32-arm64", [\
+        ["npm:11.0.0", {\
+          "packageLocation": "./.yarn/unplugged/@rometools-cli-win32-arm64-npm-11.0.0-a3f531baae/node_modules/@rometools/cli-win32-arm64/",\
+          "packageDependencies": [\
+            ["@rometools/cli-win32-arm64", "npm:11.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@rometools/cli-win32-x64", [\
+        ["npm:11.0.0", {\
+          "packageLocation": "./.yarn/unplugged/@rometools-cli-win32-x64-npm-11.0.0-5533c5b10d/node_modules/@rometools/cli-win32-x64/",\
+          "packageDependencies": [\
+            ["@rometools/cli-win32-x64", "npm:11.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["accepts", [\
@@ -112,6 +166,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["client", "workspace:packages/client"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:658502eb4296e93abedc18b6aa9b26978f434f08d98e21ebb0e725354b8bb54b62db9c4a1893e460c694ff7500ff5cbafa4457b0dfd26b5838868666c861e990#npm:18.2.0"],\
+            ["rome", "npm:11.0.0"],\
+            ["server", "workspace:packages/server"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=d73830"]\
           ],\
           "linkType": "SOFT"\
@@ -523,15 +579,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["prettier", [\
-        ["npm:2.8.1", {\
-          "packageLocation": "./.yarn/cache/prettier-npm-2.8.1-be60b51821-4f21a0f126.zip/node_modules/prettier/",\
-          "packageDependencies": [\
-            ["prettier", "npm:2.8.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["proxy-addr", [\
         ["npm:2.0.7", {\
           "packageLocation": "./.yarn/cache/proxy-addr-npm-2.0.7-dae6552872-29c6990ce9.zip/node_modules/proxy-addr/",\
@@ -609,6 +656,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["rome", [\
+        ["npm:11.0.0", {\
+          "packageLocation": "./.yarn/unplugged/rome-npm-11.0.0-22ed7a887e/node_modules/rome/",\
+          "packageDependencies": [\
+            ["rome", "npm:11.0.0"],\
+            ["@rometools/cli-darwin-arm64", "npm:11.0.0"],\
+            ["@rometools/cli-darwin-x64", "npm:11.0.0"],\
+            ["@rometools/cli-linux-arm64", "npm:11.0.0"],\
+            ["@rometools/cli-linux-x64", "npm:11.0.0"],\
+            ["@rometools/cli-win32-arm64", "npm:11.0.0"],\
+            ["@rometools/cli-win32-x64", "npm:11.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["safe-buffer", [\
         ["npm:5.2.1", {\
           "packageLocation": "./.yarn/cache/safe-buffer-npm-5.2.1-3481c8aa9b-b99c4b41fd.zip/node_modules/safe-buffer/",\
@@ -678,6 +740,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["server", "workspace:packages/server"],\
             ["express", "npm:4.18.2"],\
+            ["rome", "npm:11.0.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=d73830"]\
           ],\
           "linkType": "SOFT"\
@@ -727,7 +790,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["ts-project-references", "workspace:."],\
-            ["prettier", "npm:2.8.1"],\
+            ["rome", "npm:11.0.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=d73830"]\
           ],\
           "linkType": "SOFT"\
